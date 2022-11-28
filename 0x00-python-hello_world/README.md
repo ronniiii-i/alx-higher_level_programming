@@ -26,3 +26,9 @@ In this project I learnt
 - **6. Play with strings**
 	- [6-concat.py](6-concat.py): Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py) to print Welcome to Holberton School! using the variables str1 = "Holberton" and str2 = "School"
 
+- **7. Copy - Cut - Paste**
+	-[7-edges.py](./7-edges.py): Python script that sets three string variables based on the string contained in the variable `word` as follows:
+		- `word_first_3`: Contains the first three letters of the variable `word`.
+		- `word_last_2`: Contains the last two letters of the variable `word`.
+		- `middle_word`: Contains the value of the variable `word` without the first and last letters.
+		- Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py).
