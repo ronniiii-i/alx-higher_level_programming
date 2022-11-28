@@ -36,4 +36,9 @@ In this project I learnt
 		- `word_last_2`: Contains the last two letters of the variable `word`.
 		- `middle_word`: Contains the value of the variable `word` without the first and last letters.
 		- Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/7-edges.py)
+* **8. Create a new sentence**
+	- [8-concat_edges.py](./8-concat_edges.py): Python script that prints `object-oriented programming with Python`, followed by a new line without creating new variables or string literals.
+	- Completion of [this source code](https://github.com/holbertonschool/0x00.py/blob/master/8-concat_edges.py).
+* **9. Easter Egg**
+	- [9-easter_egg.py](./9-easter_egg.py): Python script that prints "The Zen of Python" by Tim Peters, followed by a new line.
 
