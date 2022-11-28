@@ -42,3 +42,10 @@ In this project I learnt
 * **9. Easter Egg**
 	- [9-easter_egg.py](./9-easter_egg.py): Python script that prints "The Zen of Python" by Tim Peters, followed by a new line.
 
+* **10. Linked list cycle**
+	- [10-check_cycle.c](./10-check_cycle.c): C function that checks if a linked list   contains a cycle.
+		- Returns `0` if there is no cycle and `1` if there is.
+	- Helper files:
+		- [linked_lists.c](./linked_lists.c): C functions handling linked lists for testing
+		- [lists.h](./lists.h): Header file containing definitions and prototypes for all types and functions used in [linked_lists.c](./linked_lists.c) and [10-check_cycle.c](./10-check_cycle.c).
+
