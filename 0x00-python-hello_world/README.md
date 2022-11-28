@@ -23,4 +23,6 @@ In this project I learnt
 
 - **5. Print string**
 	- [5-print_string.py](5-print_string.py): Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/5-print_string.py) in order to print 3 times a string stored in the variable str, followed by its first 9 characters.
+- **6. Play with strings**
+	- [6-concat.py](6-concat.py): Complete this [source code](https://github.com/holbertonschool/0x00.py/blob/master/6-concat.py) to print Welcome to Holberton School! using the variables str1 = "Holberton" and str2 = "School"
 
