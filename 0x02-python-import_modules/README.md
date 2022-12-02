@@ -61,9 +61,9 @@ modules in Python. I further practiced using the builtin function
   `#pythoniscool` followed by a new line in the standard output.
   * Without using `print`, `eval`, `open`, or `sys`.
 
-* **8. ByteCode -> Python #3**
-  * [102-magic_calculation.py](./102-magic_calculation.py): Python function matching exactly a
-  bytecode provided by Holberton School.
+[//]: # (* **8. ByteCode -> Python #3**)
+
+[//]: # (* [102-magic_calculation.py]~./102-magic_calculation.py~: Python function matching exactly a bytecode provided by Holberton School.)
 
 * **9. Fast alphabet**
   * [103-fast_alphabet.py](./103-fast_alphabet.py): Python program that prints the alphabet in
