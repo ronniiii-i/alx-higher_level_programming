@@ -1,12 +1,10 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    # Iterate over the rows of the matrix
-    for row in matrix:
-        # Iterate over the elements in the row
-        for element in row:
-            # Print the element with the appropriate padding
-            print("{:d}".format(element), end="")
-            if element != (len(row) - 1):
+    """Print a matrix of integers."""
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+                print("{:d}".format(matrix[i][j]), end="")
+                if j != (len(matrix[i]) - 1):
                     print(" ", end="")
-        # Print a newline after each row
-        print()
+
+        print("")
