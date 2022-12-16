@@ -8,7 +8,7 @@ def print_matrix_integer(matrix=[[]]):
         # Iterate over the elements in the row
         for element in row:
             # Add the element to the row string
-            row_string += "{} ".format(element)
+            row_string += "{:d} ".format(element)
 
         # Print the row string
         print(row_string)
