@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    # # Check if the matrix is empty
+    # Iterate over the rows of the matrix
     for row in matrix:
         # Initialize a string to represent the row
         row_string = ""
 
         # Iterate over the elements in the row
         for element in row:
-            # Add the element to the row string
-            row_string += "{:d} ".format(element)
+            # Print the element with the appropriate padding
+            print("{:d}".format(element), end=" ")
 
-        # Print the row string
-        print(row_string)
+        # Print a newline after each row
+        print()
