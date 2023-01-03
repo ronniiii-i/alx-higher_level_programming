@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if type(a_dictionary) is dict:
+    if type(a_dictionary) is dict and len(list(a_dictionary.keys())) != 0:
         first = list(a_dictionary.keys())[0]
         store = a_dictionary.get(first)
         new_dict = first
