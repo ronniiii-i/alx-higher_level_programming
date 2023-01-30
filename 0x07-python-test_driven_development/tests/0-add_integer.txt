@@ -7,6 +7,8 @@
 100
 >>> print(add_integer(100.3, -2))
 98
+>>> add_integer(1500.5)
+1598
 >>> try:
 ...     print(add_integer(4, "School"))
 ... except Exception as e:
