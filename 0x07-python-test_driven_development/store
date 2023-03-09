@@ -1,5 +1,2 @@
-for i in range(size):
-        for j in range(size):
-            print('#', end='')
-        print()
-    
+ return text.replace(".", "\n").replace("?", "\n").replace(":", "\n")
+ 
