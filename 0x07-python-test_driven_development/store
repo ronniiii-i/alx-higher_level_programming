@@ -1,18 +1,5 @@
-
-def matrix_divided(matrix, div):
-    """divides all elements of a matrix and returns new matrix"""
-    new_matrix = []
-    for i in range(len(matrix)):
-        new_row = []
-        for j in range(len(matrix[i])):
-            new_row.append(matrix[i][j] / div)
-        new_matrix.append(new_row)
-    return new_matrix
-
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
-print(matrix_divided(matrix, 3))
-print(matrix)
+for i in range(size):
+        for j in range(size):
+            print('#', end='')
+        print()
+    
