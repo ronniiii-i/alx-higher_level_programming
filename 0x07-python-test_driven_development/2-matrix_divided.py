@@ -32,11 +32,3 @@ def matrix_divided(matrix, div):
 
     new_matrix = [[round(element/div, 2) for element in row] for row in matrix]
     return new_matrix
-
-
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6]
-]
-print(matrix_divided(matrix, 3))
-print(matrix)
