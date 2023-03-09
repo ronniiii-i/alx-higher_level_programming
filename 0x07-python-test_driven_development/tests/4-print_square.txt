@@ -47,7 +47,7 @@ Size is anything but integer:
     ...     print(e)
     size must be an integer
 
-Size not defined:
+Size undefined:
     >>> try:
     ...     print_square()
     ... except TypeError as e:
