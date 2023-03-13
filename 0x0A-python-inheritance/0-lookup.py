@@ -9,6 +9,4 @@ def lookup(obj):
         obj: the object to look up the attributes and methods of
     Returns the list of available attributes and methods of an object
     """
-    attributes = dir(obj)
-    methods = [method for method in dir(obj) if callable(getattr(obj, method))]
-    return attributes, methods
+    return dir(obj)
