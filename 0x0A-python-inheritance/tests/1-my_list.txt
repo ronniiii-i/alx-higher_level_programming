@@ -25,3 +25,50 @@ Print List:
 Print Sorted List:
     >>> my_list.print_sorted()
     [1, 2, 3, 4, 5]
+
+Print List again after Sorted:
+    >>> print(my_list)
+    [1, 4, 2, 3, 5]
+
+
+List with Negative Value
+========================
+
+Define list and add values:
+    >>> mixed_list = MyList()
+    >>> mixed_list.append(1)
+    >>> mixed_list.append(4)
+    >>> mixed_list.append(-6)
+    >>> mixed_list.append(-3)
+    >>> mixed_list.append(5)
+
+Print List:
+    >>> print(mixed_list)
+    [1, 4, -6, -3, 5]
+
+Print Sorted List:
+    >>> mixed_list.print_sorted()
+    [-6, -3, 1, 4, 5]
+
+Print List again after Sorted:
+    >>> print(mixed_list)
+    [1, 4, -6, -3, 5]
+
+
+Empty List
+=========
+
+Define list:
+    >>> empty_list = MyList()
+
+Print List:
+    >>> print(empty_list)
+    []
+
+Print Sorted List:
+    >>> empty_list.print_sorted()
+    []
+
+Print List again after Sorted:
+    >>> print(empty_list)
+    []
