@@ -1,36 +1,11 @@
 #!/usr/bin/python3
-"""Defines a class"""
-
-
-class BaseGeometry:
-    """
-    Defines a class called BaseGeometry
-    """
-    def area(self):
-        """
-        raises Exception
-        """
-        raise Exception("area() is not implemented")
-
-    def integer_validator(self, name, value):
-        """
-        Validates value
-        Arg:
-            name(str): name of the variable
-            value(int): value to be validated
-        Raises:
-            TypeError: if value is not an integer
-            ValueError: if value is less than or equal to 0
-        """
-        if not isinstance(value, int):
-            raise TypeError("{} must be an integer".format(name))
-        if value <= 0:
-            raise ValueError("{} must be greater than 0".format(name))
+"""Defines a class called Rectangle that inherits from BaseGeometry."""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
     """
-    Defines a class called Rectangle that inherits from BaseGeometry.
+    Class called Rectangle that inherits from BaseGeometry.
     """
     def __init__(self, width, height):
         """
@@ -39,7 +14,8 @@ class Rectangle(BaseGeometry):
             width (int): The width of the rectangle.
             height (int): The height of the rectangle.
         """
-        self.__width = width
-        self.__height = height
+        # super().__init__()
         self.integer_validator("width", width)
+        self.__width = width
         self.integer_validator("height", height)
+        self.__height = height
