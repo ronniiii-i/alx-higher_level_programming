@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
-Defines a function that checks if obj is exactly an instance of a specified class
+Defines a function that checks if obj is exactly an instance of a specified
+class
 """
 
 
