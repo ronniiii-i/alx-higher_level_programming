@@ -50,6 +50,7 @@ Call function with valid ``value`` values:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] integer_validator() missing 1 required positional argument: 'value'
 
+
 ``value`` is not a number
 ==========================
 
@@ -81,25 +82,22 @@ Call function with valid ``value`` values:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] distance must be an integer
 
-
-``value`` is boolean
-=====================
-False:
+``value`` is False:
     >>> try:
     ...     bg.integer_validator("distance", False)
     ... except Exception as e:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [ValueError] distance must be greater than 0
-True:
+
+``value`` is True:
     >>> try:
     ...     bg.integer_validator("distance", True)
     ... except Exception as e:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
 
-
 ``value`` is dict:
     >>> try:
-    ...     bg.integer_validator("distance", {})
+    ...     bg.integer_validator("distance", {1, 2})
     ... except Exception as e:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] distance must be an integer
