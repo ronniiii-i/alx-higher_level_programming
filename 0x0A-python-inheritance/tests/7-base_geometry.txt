@@ -11,6 +11,13 @@ Now use it
 Define it:
     >>> bg = BaseGeometry()
 
+Call area function:
+    >>> try:
+    ...     print(bg.area())
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [Exception] area() is not implemented
+
 Call function with valid ``value`` values:
     >>> bg.integer_validator("my_int", 12)
     >>> bg.integer_validator("width", 89)
@@ -60,9 +67,39 @@ Call function with valid ``value`` values:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] distance must be an integer
 
-``value`` is empty list:
+``value`` is list:
     >>> try:
     ...     bg.integer_validator("distance", [])
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] distance must be an integer
+
+``value`` is tuple:
+    >>> try:
+    ...     bg.integer_validator("distance", (4,))
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [TypeError] distance must be an integer
+
+
+``value`` is boolean
+=====================
+False:
+    >>> try:
+    ...     bg.integer_validator("distance", False)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+    [ValueError] distance must be greater than 0
+True:
+    >>> try:
+    ...     bg.integer_validator("distance", True)
+    ... except Exception as e:
+    ...     print("[{}] {}".format(e.__class__.__name__, e))
+
+
+``value`` is dict:
+    >>> try:
+    ...     bg.integer_validator("distance", {})
     ... except Exception as e:
     ...     print("[{}] {}".format(e.__class__.__name__, e))
     [TypeError] distance must be an integer
