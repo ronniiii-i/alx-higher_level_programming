@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Python script that displays the body of a response"""
 import urllib.request
 import urllib.error
 from sys import argv
