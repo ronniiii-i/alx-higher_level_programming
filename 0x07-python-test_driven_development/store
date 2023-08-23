@@ -1,2 +1,0 @@
- return text.replace(".", "\n").replace("?", "\n").replace(":", "\n")
- 
