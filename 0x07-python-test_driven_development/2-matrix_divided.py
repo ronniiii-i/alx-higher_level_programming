@@ -9,7 +9,7 @@ def matrix_divided(matrix, div):
         matrix (list of lists): A matrix represented as a list of lists.
         div (int/float): The number to divide each element of the matrix by
     Raises:
-        ypeError: If matrix contains non-numbers.
+        TypeError: If matrix contains non-numbers.
         TypeError: If div is not a number.
         TypeError: If matrix rows are not of equal length
         ZeroDivisionError: If div is zero.
