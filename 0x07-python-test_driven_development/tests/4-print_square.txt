@@ -1,0 +1,75 @@
+Using ``print_square(size)``
+------------------------------
+
+Parameter must be an integer
+Prints square with the size ``size``
+
+Import function:
+
+    >>> print_square = __import__('4-print_square').print_square
+
+Now use it:
+
+Basic Usage
+===========
+
+Size is positive integer:
+    >>> print_square(2)
+    ##
+    ##
+
+    >>> print_square(3)
+    ###
+    ###
+    ###
+
+
+Testing
+=============
+
+Size is not integer:
+    >>> try:
+    ...     print_square("hi")
+    ... except Exception as e:
+    ...     print(e)
+    size must be an integer
+
+    >>> try:
+    ...     print_square((2, 4))
+    ... except Exception as e:
+    ...     print(e)
+    size must be an integer
+
+    >>> try:
+    ...     print_square(None)
+    ... except Exception as e:
+    ...     print(e)
+    size must be an integer
+
+Size is negative integer:
+    >>> try:
+    ...     print_square(-4)
+    ... except Exception as e:
+    ...     print(e)
+    size must be >= 0
+
+Size is positive float:
+    >>> try:
+    ...     print_square(3.5)
+    ... except Exception as e:
+    ...     print(e)
+    size must be an integer
+
+Size is negative float:
+    >>> try:
+    ...     print_square(-3.5)
+    ... except Exception as e:
+    ...     print(e)
+    size must be an integer
+
+Size is not given:
+    >>> try:
+    ...     print_square()
+    ... except Exception as e:
+    ...     print(e)
+    print_square() missing 1 required positional argument: 'size'
