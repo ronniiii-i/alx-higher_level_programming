@@ -56,9 +56,11 @@ class Rectangle:
         """method to return string representation of rectangle"""
         string = ""
         if self.__height == 0 or self.__width == 0:
+            string += "\n"
             return ""
         for i in range(self.__height):
             for j in range(self.__width):
                 string += "#"
-            string += "\n"
+            if i < self.__height - 1:
+                string += "\n"
         return string
