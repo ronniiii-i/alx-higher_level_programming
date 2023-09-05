@@ -10,6 +10,9 @@ def text_indentation(text):
     Raises:
         TypeError: if text is not a string
     """
+    if not isinstance(text, str):
+        raise TypeError("text must be a string")
+
     newText = ""
 
     for i in range(len(text)):
