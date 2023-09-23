@@ -174,7 +174,6 @@ class Rectangle(Base):
         """
         Updates instance attributes via no-keyword & keyword args.
         """
-        # print(args, kwargs)
         if args:
             self.update(*args)
         elif kwargs:
