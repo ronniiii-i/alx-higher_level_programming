@@ -145,3 +145,14 @@ class Rectangle(Base):
             for j in range(self.width):
                 print("#", end="")
             print("")
+
+    def __str__(self):
+        """
+        Return a custom string representation of the Rectangle.
+
+        Returns:
+            str: A string in custom format
+        """
+        str = "[Rectangle] ({}) {}/{} -\
+ {}/{}".format(self.id, self.x, self.y, self.width, self.height)
+        return str
