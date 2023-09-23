@@ -139,12 +139,13 @@ class Rectangle(Base):
 
     def display(self):
         """
-        prints the rectangle in stdout
+        Prints the rectangle in stdout with x and y offsets.
         """
+        for i in range(self.y):
+            print()
         for i in range(self.height):
-            for j in range(self.width):
-                print("#", end="")
-            print("")
+            print(" " * self.x, end="")
+            print("#" * self.width)
 
     def __str__(self):
         """
@@ -153,6 +154,5 @@ class Rectangle(Base):
         Returns:
             str: A string in custom format
         """
-        str = "[Rectangle] ({}) {}/{} -\
- {}/{}".format(self.id, self.x, self.y, self.width, self.height)
-        return str
+        return "[Rectangle] ({}) {}/{} - {}/{}".\
+            format(self.id, self.x, self.y, self.width, self.height)
