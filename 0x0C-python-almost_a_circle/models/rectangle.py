@@ -22,12 +22,12 @@ class Rectangle(Base):
             id (int): The identity of the new Rectangle.
         """
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
-    # Getter methods
+    @property
     def get_width(self):
         """
         Get the width of the rectangle.
@@ -37,34 +37,7 @@ class Rectangle(Base):
         """
         return self.__width
 
-    def get_height(self):
-        """
-        Get the height of the rectangle.
-
-        Returns:
-            int: The height of the rectangle.
-        """
-        return self.__height
-
-    def get_x(self):
-        """
-        Get the x-coordinate of the rectangle.
-
-        Returns:
-            int: The x-coordinate of the rectangle.
-        """
-        return self.__x
-
-    def get_y(self):
-        """
-        Get the y-coordinate of the rectangle.
-
-        Returns:
-            int: The y-coordinate of the rectangle.
-        """
-        return self.__y
-
-    # Setter methods
+    @width.setter
     def set_width(self, width):
         """
         Set the width of the rectangle.
@@ -74,6 +47,17 @@ class Rectangle(Base):
         """
         self.__width = width
 
+    @property
+    def get_height(self):
+        """
+        Get the height of the rectangle.
+
+        Returns:
+            int: The height of the rectangle.
+        """
+        return self.__height
+
+    @width.setter
     def set_height(self, height):
         """
         Set the height of the rectangle.
@@ -83,6 +67,17 @@ class Rectangle(Base):
         """
         self.__height = height
 
+    @property
+    def get_x(self):
+        """
+        Get the x-coordinate of the rectangle.
+
+        Returns:
+            int: The x-coordinate of the rectangle.
+        """
+        return self.__x
+
+    @width.setter
     def set_x(self, x):
         """
         Set the x-coordinate of the rectangle.
@@ -92,6 +87,17 @@ class Rectangle(Base):
         """
         self.__x = x
 
+    @property
+    def get_y(self):
+        """
+        Get the y-coordinate of the rectangle.
+
+        Returns:
+            int: The y-coordinate of the rectangle.
+        """
+        return self.__y
+
+    @width.setter
     def set_y(self, y):
         """
         Set the y-coordinate of the rectangle.
