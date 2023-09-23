@@ -57,7 +57,7 @@ class Rectangle(Base):
         """
         return self.__height
 
-    @width.setter
+    @height.setter
     def height(self, height):
         """
         Set the height of the rectangle.
@@ -77,7 +77,7 @@ class Rectangle(Base):
         """
         return self.__x
 
-    @width.setter
+    @x.setter
     def x(self, x):
         """
         Set the x-coordinate of the rectangle.
@@ -97,7 +97,7 @@ class Rectangle(Base):
         """
         return self.__y
 
-    @width.setter
+    @y.setter
     def y(self, y):
         """
         Set the y-coordinate of the rectangle.
